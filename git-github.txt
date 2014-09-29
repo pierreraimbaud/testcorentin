@@ -1,0 +1,32 @@
+Tuto GIT et GITHUB
+
+Associer vim à git (pratique)
+sudo apt-get install vim
+git config --global core.editor "vim"
+
+A l'apparition après un commit :
+faire i pour écrire
+écrire le msg de commit
+faire échap
+faire :wq pour sauvegarder et quitter
+
+Pour configure sa clef SSH :
+https://help.github.com/articles/generating-ssh-keys
+
+Dans son dossier de fichiers, en local
+
+1) git init
+2) git add e.txt (etc. tous les fichiers nouveaux, et si on veut juste faire remonter les màj de fichiers, faire git add -u)
+3) git commit (-m <nomducommit, ou dans ce qui s'ouvrira si tu mets rien)
+4) Créez un dépot dans github, sur la page web
+5) git remote add origin git@github.com:pierreraimbaud/(<le_nom_du_depo_github.git)
+6) git push origin master
+
+et git pull origin master pour choper depuis github
+
+git log pour voir les commit
+git status pour voir l'état des fichiers en local
+
+pour ajouter un collaborateur
+https://help.github.com/articles/adding-collaborators-to-a-personal-repository
+
